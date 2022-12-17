@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+  box-sizing:border-box;
+}
+body, html {
+  height: 100%;
+
+  margin: 0;
+  font-family: Poppins, sans-serif;
+   background-color: #222;
+}
+
+div.bg {
+  margin:0;
+  top:0;
+  padding:0;
+  background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),  url("background-img.jpg");
+  width:100%;
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+animation: mymove 5s ease-in-out alternate infinite;
+}
+
+@keyframes mymove {
+  0% {
+      background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),  url("background-img.jpg");
+  }
+
+
+  40% {
+     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),  url("background-img(2).jpg");
+    
+  }
+
+  60%{
+     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),  url("background-img(4).jpg");
+
+  }
+
+  100%{
+     background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)),  url("background-img(3).jpg");
+
+  }
+
+}
+
+
+div.movie-header-nav{
+  background-color: #222;
+  position: fixed;
+  width:100%;
+  top:0;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:5px 5em;
+}
+div.nav-logo a{
+  font-size: 18px;
+  text-transform: uppercase;
+   color:white;
+   font-weight: bold;
+ 
+
+}
+div.nav-links{
+  display: flex;
+  align-items: center;
+}
+div.nav-links span{
+  font-weight: bold;
+  color:white;
+  display:none;
+}
+div.nav-links span:hover{
+  cursor: pointer;
+  }
+div.nav-links p{
+  color:whitesmoke;
+  margin-right: 2em;
+  }
+div.sideNav{
+  background-color: #111;
+  height:100%;
+position: fixed;
+width:0%;
+top:0;
+z-index:1;
+right:0;
+overflow-x: hidden;
+overflow-y: scroll;
+padding-top:60px;
+transition: all 0.5s ease;
+display:none;
+}
+div.sideNav a, div.sideNav p{
+  text-decoration: none;
+  padding:8px 8px 8px 40px;
+  color:rgb(255,82,82);
+  display:block;
+  transition: all 0.3s ease;
+  margin-bottom: 2em;
+  line-height:2em;
+}
+
+div.sideNav a:hover, div.sideNav p:hover{
+  background-color:rgb(255,82,82) ;
+  cursor: pointer;
+  color:#fff;
+}
+div.sideNav a.closeBtn{
+  position: absolute;
+  cursor: pointer;
+  top:10px;
+  right:25px;
+  font-size: 20px;
+  margin-left:50px;
+}
+
+
+
+
+
+div.movie-contact-form {
+ padding-top: 7em;
+ padding-bottom:1em;
+}
+form{
+  margin-left:5em;
+  }
+form div.first{   
+  display: flex;
+  flex-wrap:wrap;
+  
+}
+form p{
+  color:white;
+}
+input{
+  margin-right:10px;
+  padding:10px;
+  font-family: "Poppins", sans-serif;
+  border:1px solid #e5e5e5;
+  outline:none;
+  width:300px;
+  border-radius:5px;
+  color:#888;
+  box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+  -moz-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+  -webkit-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+}
+input:hover,
+input:focus,{
+  border:1px solid rgb(255,82,82);
+}
+p.submit input{
+  color:white;
+  background-color: rgb(255,82,82);
+  transition: all 0.2s ease;
+}
+p.submit input:hover, p.submit input:focus{
+  border:1px solid rgb(255,82,82);
+  background-color:white;
+  color:rgb(255,82,82);
+  cursor: pointer;
+  -moz-cursor:pointer;
+  -o-cursor:pointer;
+  -webkit-cursor:pointer;
+}
+div.footer{
+  display:flex;
+  justify-content: center;
+  background-color: #222;
+  color:white;
+  padding:2px 5em;
+  
+}
+div.footer div.copyright-text{
+  margin-right: auto;
+}
+div.footer a{
+  color:rgb(255,82,82);
+  
+  font-weight: bold;
+  text-decoration: none;
+}
+
+div.footer a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width:800px){
+  div.movie-header-nav{
+    padding:10px 2em;
+  }
+  div.nav-links span{
+    display: block;
+  }
+  div.nav-links p{
+    display: none;
+  }
+  div.sideNav{
+    display: block;
+  }
+  form{
+    margin-left:2em;
+  }
+  div.footer{
+  flex-direction: column;
+  padding:0em 2em;
+}
+div.footer div.copyright-text{
+  display: block;
+  margin: 0 auto;
+  padding:0;
+}
+div.footer div.made-by-text{
+  display: block;
+  padding:0;
+  margin: 0 auto;
+}
+
+}
+
+@media (max-width:670px){
+  input{
+    width:200px;
+  }
+  input#address{
+    width:260px;
+  }
+  }
+ @media (max-width:470px){ 
+ input{
+    width:130px;
+  }
+ } 

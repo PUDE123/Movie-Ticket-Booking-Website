@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ 	<title>Movie Ticket Booking Form</title>
+ 
+ </head>
+ <body>
+
+ 	 <div class="movie-header-nav">
+      
+      <div class="nav-logo">
+      		<a>FREE<span style="color:rgb(255, 82, 82);">MovieTickets</span></a>
+      </div>
+
+      <div class="nav-links">
+      	<p>Get Tickets</p>
+      	<p>Bookings</p>
+      	<p>Sign In</p>
+          <span class="menu-btn" onclick="openNav()">&#9776;</span>
+      </div>
+
+    </div>
+
+      <div class="sideNav" id="sidenav">
+    <a class="closeBtn" onclick="closeNav()">&#10006;</a>
+      <p>Get Tickets</p>
+        <p>Bookings</p>
+        <p>Sign In</p>
+  </div>
+
+
+
+  <div class="bg">
+  	
+
+<div class="movie-contact-form">
+
+  	
+   <form class="form" action="#" method="POST">
+
+   <div class="first">	
+
+      <p class="name">
+        <label for="name">Movie Title</label><br>
+        <input type="text" name="name" id="name" required>
+      </p>
+
+      <p class="name">
+        <label for="name">Directed By</label><br>
+        <input type="text" name="name" id="name" placeholder="Full Name" required>
+      </p>
+  </div>
+
+
+<div class="first">	
+
+      <p class="date">
+        <label for="date">Date</label><br>
+        <input type="date" name="date" id="date"  required>
+      </p>
+
+       <p class="time">
+        <label for="time">Time</label><br>
+        <input type="time" name="time" id="time"  required>
+      </p>
+
+
+</div>
+
+       <p class="address">
+        <label for="time">Address</label><br>
+        <input type="text" name="address" id="address" placeholder="Street Address, City, State/Province" required>
+      </p>
+
+    
+     <div class="first">	
+
+     
+        <p class="row">
+        <label for="row">Row</label><br>
+        <input type="number" name="row" id="row"  placeholder="e.g 23" required>
+      </p>
+
+
+
+
+   <p class="seat-number">
+        <label for="seat-number">Seat Number</label><br>
+        <input type="number" name="seat-number" id="seat-number"  placeholder="e.g 23" required>
+      </p>
+</div>
+      
+
+    <p class="submit">
+      <input type="submit" value="Submit">
+    </p>
+
+
+    </form>
+          <!-- end of form -->
+        
+
+  </div>	
+
+  </div>
+
+  <div class="footer">
+   <div class="copyright-text">
+    <p>&copy;All Rights Reserved 2022.</p>
+   </div>
+
+   <div class="made-by-text">
+     <p>Made by <a href="https://pudedesignstudio.netlify.app/">Uduak Precious E.</a></p>
+   </div>
+
+</div>
+
+
+
+
+  <script>
+  //navbar
+  function openNav(){
+  document.getElementById("sidenav").style.width="50%";
+}
+function closeNav(){
+  document.getElementById("sidenav").style.width="0%";
+}
+</script>
+
+</body>
+</html>
